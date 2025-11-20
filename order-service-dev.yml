@@ -7,7 +7,7 @@ spring:
     name: order-service
   data:
     mongodb:
-      uri: mongodb://root:password@localhost:27018/order-dev?authSource=admin
+      uri: mongodb://localhost:27017/order-dev?authSource=admin
 management:
   endpoints:
     web:
