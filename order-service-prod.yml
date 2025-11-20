@@ -1,0 +1,22 @@
+global:
+  message: Welcome to Order Service PROD environment
+server:
+  port: 8084
+spring:
+  application:
+    name: order-service
+  data:
+    mongodb:
+      uri: mongodb://root:password@localhost:27018/order-service?authSource=admin
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html  
+  
