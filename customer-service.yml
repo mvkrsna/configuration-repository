@@ -3,7 +3,7 @@ spring:
     name: customer-service
   data:
     mongodb:
-      uri: mongodb://root:password@localhost:27018/customer-service?authSource=admin
+      uri: mongodb://root:password@localhost:27018/customer-dev?authSource=admin
 management:
   endpoints:
     web:
